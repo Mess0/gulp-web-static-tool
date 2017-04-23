@@ -1,0 +1,7 @@
+node_modules/
+dist/
+#app/img/
+#app/libs/
+src/fonts/
+#app/css/
+.idea
