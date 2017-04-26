@@ -1,0 +1,12 @@
+$font-dir: "../fonts/Lobster/"
+
+=font-face($family, $path, $weight: normal, $style: normal)
+  @font-face
+    font-family: $family
+    src: url('#{$font-dir}#{$path}.eot')
+    src: url('#{$font-dir}#{$path}.eot?#iefix') format('embedded-opentype'),url('#{$font-dir}#{$path}.woff') format('woff'), url('#{$font-dir}#{$path}.ttf') format('truetype'), url('#{$font-dir}#{$path}.svg##{$family}') format('svg')
+    font-weight: $weight
+    font-style: $style
+
+// Declaring new fonts. "default-font" could be changed.
++font-face("default-font", "Lobster-Regular")

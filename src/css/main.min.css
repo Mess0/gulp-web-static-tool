@@ -1,9 +1,16 @@
+@font-face {
+  font-family: "default-font";
+  src: url("../fonts/Lobster/Lobster-Regular.eot");
+  src: url("../fonts/Lobster/Lobster-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lobster/Lobster-Regular.woff") format("woff"), url("../fonts/Lobster/Lobster-Regular.ttf") format("truetype"), url("../fonts/Lobster/Lobster-Regular.svg#default-font") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   font-size: 16px;
   min-width: 320px;
+  font-family: "default-font", cursive;
   position: relative;
   line-height: 1.5;
-  font-family: "lobster", cursive;
   overflow-x: hidden;
   background-repeat: repeat; }
 
@@ -19,69 +26,3 @@ a {
 .content {
   min-height: -webkit-calc(100vh - 174px);
   min-height: calc(100vh - 174px); }
-
-.divider {
-  margin-bottom: 35px;
-  width: 100%;
-  overflow: hidden;
-  text-align: center; }
-  .divider span {
-    display: inline-block;
-    padding: 0 15px;
-    position: relative; }
-    .divider span::before, .divider span::after {
-      content: "";
-      display: block;
-      border-top: solid 1px #7b3596;
-      height: 1px;
-      position: absolute;
-      background: #ddd;
-      top: 50%;
-      width: 35vw; }
-    .divider span img {
-      width: 19px;
-      height: auto; }
-  .divider span::before {
-    right: 100%; }
-  .divider span::after {
-    left: 100%; }
-
-main .col-xs-12 {
-  padding-bottom: 35px; }
-
-@media only screen and (max-width: 768px) {
-  .grp-first {
-    padding-top: 25px; } }
-
-.main-icons {
-  max-width: 125px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.main-icons__title--color {
-  color: #7b3596; }
-
-.main-icons__text--style {
-  font-family: "roboto";
-  line-height: 1.4;
-  font-weight: 700; }
-
-.btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: rgba(123, 53, 150, 0.38);
-  border-radius: 14px;
-  padding: 4px 40px; }
-
-.btn-default:hover {
-  color: #fff;
-  background-color: #7b3596;
-  border-color: #7b3596; }
-
-.inner--gradient {
-  padding-top: 20px;
-  margin: 0 auto;
-  width: 80%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f9f7f7), to(#fffcfc));
-  background: -webkit-linear-gradient(top, #f9f7f7, #fffcfc);
-  background: linear-gradient(to bottom, #f9f7f7, #fffcfc); }
